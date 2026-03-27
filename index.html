@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Deepika Tiwari | Professional Boxer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        a { text-decoration: none; color: inherit; }
+
+        #header {
+            background: #111;
+            padding: 15px 30px;
+            text-align: left;
+        }
+        #header .logo {
+            font-size: 2rem;
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #111;
+            padding: 8px 30px;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #f5f5f5;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #e63946; }
+
+        #hero {
+            background: url('https://via.placeholder.com/1400x600?text=Deepika+Tiwari+Fighting') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffd700;
+            position: relative;
+        }
+        #hero::after {
+            content: "";
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.7);
+        }
+        #hero h1, #hero p { z-index:1; }
+        #hero h1 { font-size: 3.2rem; margin-bottom: 0.5rem; }
+        #hero p { font-size: 1.3rem; margin-bottom: 1.5rem; }
+        #hero .btn-primary {
+            background: #e63946;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 30px;
+        }
+        .section-title {
+            font-size: 2rem;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-text,
+        .fight-details,
+        .media-gallery {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .stats-block {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .stats-card {
+            background: #1a1a1a;
+            padding: 15px 25px;
+            border-radius: 8px;
+            width: 180px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .stats-card h3 {
+            color: #e63946;
+            font-size: 1.6rem;
+        }
+
+        .fight-card {
+            background: #111;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        .fight-card h4 {
+            color: #ffd700;
+        }
+
+        .sponsor-packages {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .package-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            width: 240px;
+            text-align: center;
+            border-top: 4px solid #e63946;
+        }
+        .package-card h3 { color: #ffd700; margin-bottom: 8px; }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery-grid img {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        form {
+            max-width: 600px;
+            margin:auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border:none;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            background: #e63946;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #111;
+            text-align:center;
+            padding:20px 0;
+            margin-top:20px;
+        }
+        footer small { color: #777; }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header + Navigation -->
+    <header id="header">
+        <span class="logo">Deepika Tiwari</span>
+    </header>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#performance">Stats</a>
+        <a href="#fights">Portfolio</a>
+        <a href="#sponsor">Sponsorship</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section id="hero">
+        <h1>Deepika Tiwari</h1>
+        <p>Professional Boxer | Elite Athlete</p>
+        <a href="#about" class="btn-primary">Explore Profile</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Deepika</h2>
+        <div class="about-text">
+            <p>
+                Deepika Tiwari is a professional boxer competing internationally in the 55 KG category.
+                She combines technical skill, strategic movement, and powerful performance in the ring.
+                Known for her consistency, discipline, and competitive spirit, Deepika is positioned as a rising global athlete ready for brand collaborations and international exposure.
+            </p>
+        </div>
+    </section>
+
+    <!-- Performance Stats -->
+    <section id="performance">
+        <h2 class="section-title">Career Stats</h2>
+        <div class="stats-block">
+            <div class="stats-card"><h3>20</h3><p>Total Fights</p></div>
+            <div class="stats-card"><h3>16</h3><p>Wins</p></div>
+            <div class="stats-card"><h3>4</h3><p>Losses</p></div>
+            <div class="stats-card"><h3>8</h3><p>KOs</p></div>
+        </div>
+    </section>
+
+    <!-- Fight Portfolio -->
+    <section id="fights">
+        <h2 class="section-title">Fight Portfolio</h2>
+        <div class="fight-details">
+            <div class="fight-card"><h4>International Bout – 2026</h4><p>Opponent: TBD | Result: Upcoming</p></div>
+            <div class="fight-card"><h4>National Championship – 2025</h4><p>Opponent: XYZ | Result: Win</p></div>
+            <div class="fight-card"><h4>Regional Cup – 2024</h4><p>Opponent: ABC | Result: Win</p></div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Packages -->
+    <section id="sponsor">
+        <h2 class="section-title">Sponsorship Packages</h2>
+        <div class="sponsor-packages">
+            <div class="package-card"><h3>Starter</h3><p>₹1L – ₹1.5L</p><p>Social integration & visibility</p></div>
+            <div class="package-card"><h3>Growth</h3><p>₹2L – ₹3L</p><p>Training + brand content</p></div>
+            <div class="package-card"><h3>Premium</h3><p>₹4L+</p><p>Fight sponsorship + campaign</p></div>
+        </div>
+    </section>
+
+    <!-- Media Gallery -->
+    <section id="gallery">
+        <h2 class="section-title">Media Gallery</h2>
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x180?text=Training+1" alt="Training 1">
+            <img src="https://via.placeholder.com/300x180?text=Ring+Action" alt="Action Shot">
+            <img src="https://via.placeholder.com/300x180?text=Workout" alt="Workout">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="4" placeholder="Message"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Deepika Tiwari | All Rights Reserved</p>
+        <small>Designed as a professional athlete showcase</small>
+    </footer>
+
+</body>
+</html>
